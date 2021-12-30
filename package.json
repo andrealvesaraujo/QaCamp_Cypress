@@ -1,0 +1,22 @@
+{
+  "name": "qacamp_cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrealvesaraujo/QaCamp_Cypress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/andrealvesaraujo/QaCamp_Cypress/issues"
+  },
+  "homepage": "https://github.com/andrealvesaraujo/QaCamp_Cypress#readme"
+}
