@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run",
+    "testFolder": "cypress run --spec 'cypress/integration/*' ",
+    "testFile":  "cypress run --spec 'cypress/integration/TC_06_aliases.spec.js' ",
+    "testBrowser":  "cypress run --spec 'cypress/integration/TC_06_aliases.spec.js' --browser chrome "
   },
   "repository": {
     "type": "git",
