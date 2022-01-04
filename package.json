@@ -6,8 +6,8 @@
   "scripts": {
     "test": "cypress run",
     "testFolder": "cypress run --spec 'cypress/integration/*' ",
-    "testFile":  "cypress run --spec 'cypress/integration/TC_06_aliases.spec.js' ",
-    "testBrowser":  "cypress run --spec 'cypress/integration/TC_06_aliases.spec.js' --browser chrome "
+    "testFile": "cypress run --spec 'cypress/integration/TC_06_aliases.spec.js' ",
+    "testBrowser": "cypress run --spec 'cypress/integration/TC_06_aliases.spec.js' --browser chrome "
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^9.2.0"
+    "cypress": "^9.2.0",
+    "cypress-file-upload": "^5.0.8"
   },
   "bugs": {
     "url": "https://github.com/andrealvesaraujo/QaCamp_Cypress/issues"
