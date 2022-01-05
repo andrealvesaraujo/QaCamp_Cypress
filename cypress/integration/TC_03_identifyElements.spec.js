@@ -38,5 +38,14 @@ describe('Create and mark-unmark as favourite', () => {
         cy.contains('No articles are here... yet.').should('be.visible')
         cy.go('back')
     });
+
+    it('Delete Post', () => {
+        cy.SignIn()
+        cy.get('.nav-link').contains('André').click()
+        cy.contains('My Articles').should("be.visible")
+        cy.get('h1').contains('Test').click()
+        cy.get('.btn-outline-danger').contains('Delete Article').click()
+        cy.contains('Your Feed', {timeout: 10000}).should('be.visible')
+    });
 })
     

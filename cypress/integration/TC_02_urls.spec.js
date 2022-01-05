@@ -29,12 +29,25 @@ describe('Create and mark-unmark as favourite', () => {
         cy.url().should('include', 'favorites')
         cy.wait(2000)
         cy.get('.ion-heart').click()
+        cy.wait(2000)
         cy.reload()
+        cy.wait(2000)
         cy.contains('No articles are here... yet.').should('be.visible')
+        cy.wait(2000)
         cy.go('back')
         // cy.go(-1)
         // cy.go('forward')
         // cy.go(1)
     });
+
+    it('Delete Post', () => {
+        cy.SignIn()
+        cy.get('.nav-link').contains('André').click()
+        cy.contains('My Articles').should("be.visible")
+        cy.get('h1').contains('Test').click()
+        cy.get('.btn-outline-danger').contains('Delete Article').click()
+        cy.contains('Your Feed', {timeout: 10000}).should('be.visible')
+    });
+
 })
     
