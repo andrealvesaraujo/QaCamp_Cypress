@@ -1,4 +1,4 @@
-describe('First test', () => {
+describe('Login', () => {
     it('Login and Click', () => {
         cy.visit("https://react-redux.realworld.io/#/login")
         cy.get('input[type="email"]').type('test@gmail.com')
